@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ChekaT2.Inicio"
+             xmlns:local="clr-namespace:ChekaT2"
+             Title="Cheka-T"
+             Padding="0,20,0,0"
+             IconImageSource="hambar.png"
+             BackgroundColor="WhiteSmoke">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Text="¡Bienvenido!"
+                VerticalOptions="Start" 
+                TextColor="Black"
+                FontAttributes="Bold"
+                FontSize="22"
+                Margin="10"
+               Grid.ColumnSpan="1"/>
+        
+        <Frame Background="White"
+               BorderColor="#898282"
+               CornerRadius="5"
+               Padding="8"
+               HeightRequest="126"
+               WidthRequest="164"
+               IsClippedToBounds="True"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"
+               Grid.Row="1">
+            <StackLayout>
+                <Image HorizontalOptions="Center" Source="checador.png" HeightRequest="69" WidthRequest="59" VerticalOptions="Center"/>
+                <Label Text="Checador"
+                       FontSize="15"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       VerticalOptions="CenterAndExpand"
+                       TextColor="Black"/>
+            </StackLayout>
+        </Frame>
+
+        <Frame Background="White"
+               BorderColor="Black"
+               CornerRadius="5"
+               Padding="8"
+               HeightRequest="77"
+               WidthRequest="164"
+               IsClippedToBounds="True"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"
+               Grid.Row="2">
+            <StackLayout>
+                <Image HorizontalOptions="Start" Source="cump.png" HeightRequest="69" WidthRequest="59"/>
+                <Label Text="P cumpleaños"
+                       FontSize="15"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       TextColor="Black"/>
+            </StackLayout>
+        </Frame>
+
+        <Frame Background="White"
+               BorderColor="Black"
+               CornerRadius="5"
+               Padding="8"
+               HeightRequest="228"
+               WidthRequest="164"
+               IsClippedToBounds="True"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"
+               Grid.Row="1"
+               Grid.Column="1">
+            <StackLayout>
+                <Label Text="Día actual"
+                        FontSize="15"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"
+                       TextColor="Black"/>
+            </StackLayout>
+        </Frame>
+
+        <Label Text="Actividades"
+               FontSize="15"
+               FontAttributes="Bold"
+               HorizontalOptions="Start"
+               Margin="15"
+               Grid.Row="3"
+               TextColor="Black"
+               Grid.ColumnSpan="2"/>
+
+        <Frame Background="White"
+               BorderColor="Black"
+               CornerRadius="5"
+               Padding="8"
+               HeightRequest="127"
+               WidthRequest="341"
+               IsClippedToBounds="True"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Grid.Row="3"
+               Grid.ColumnSpan="2">
+        </Frame>
+
+        <Label Text="Recordatorios"
+               FontSize="15"
+               FontAttributes="Bold"
+               HorizontalOptions="Start"
+               Margin="15"
+               TextColor="Black"
+               Grid.Row="4"
+               Grid.ColumnSpan="2"/>
+
+        <Frame Background="White"
+                BorderColor="Black"
+                CornerRadius="5"
+                Padding="8"
+                HeightRequest="127"
+                WidthRequest="341"
+                IsClippedToBounds="True"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Grid.Row="4"
+               Grid.ColumnSpan="2">
+        </Frame>
+        
+        <StackLayout Grid.Row="5"
+                     Grid.ColumnSpan="1">
+            <Image HorizontalOptions="Start" Source="dad.png" HeightRequest="38" WidthRequest="38"/>
+            <Label Text="Dad Softare - Recursos humanos"
+                   FontSize="10"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="Black"/>
+        </StackLayout>
+    </Grid>
+
+</ContentPage>
