@@ -1,5 +1,6 @@
 ﻿using Microsoft.Maui.Platform;
 using ChekaT2.Handlers;
+using Java.Lang;
 
 namespace ChekaT2;
 
@@ -19,6 +20,16 @@ public partial class App : Application
 #endif
             }
         });
+
+        Routing.RegisterRoute("SignIn", typeof(SignIn));
+        Routing.RegisterRoute("SignUp", typeof(SignUp));
+        Routing.RegisterRoute("Inicio", typeof(Inicio));
+        Routing.RegisterRoute("Notificaciones", typeof(Notificaciones));
+        Routing.RegisterRoute("Cumpleaños", typeof(Cumpleaños));
+        Routing.RegisterRoute("Actividades", typeof(Actividades));
+        Routing.RegisterRoute("Recordatorios", typeof(Recordatorios));
+
         MainPage = new AppShell();
     }
+  
 }

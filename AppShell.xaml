@@ -5,14 +5,63 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:ChekaT2"
     Shell.FlyoutBehavior="Flyout"
-    FlyoutBackground="#062C53">
+    FlyoutBackground="#062C53"
+    Shell.FlyoutWidth="275">
+
+    <Shell.FlyoutHeaderTemplate>
+        <DataTemplate>
+            <Grid BackgroundColor="#062C53"
+                  HeightRequest="80">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="75"/>
+                    <ColumnDefinition Width="200"/>
+                </Grid.ColumnDefinitions>
+                <Button HeightRequest="200" 
+                        WidthRequest="275"
+                        BackgroundColor="Transparent" 
+                        TextColor="White"
+                        ImageSource="usuario.png"
+                        HorizontalOptions="StartAndExpand"
+                        VerticalOptions="Center"
+                        Grid.ColumnSpan="1"
+                       Clicked="TapGestureRecognizer_Tapped_For_Perfil">
+
+                </Button>
+                <Image HeightRequest="50"
+                       WidthRequest="50"
+                       Source="usermenu.png" 
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="End"
+                       Grid.Row="0"
+                       Grid.Column="0"/>
+                <Label Text="User name"
+                       TextColor="White"
+                       FontSize="25"
+                       FontAttributes="Bold"
+                       HorizontalOptions="StartAndExpand"
+                       VerticalOptions="EndAndExpand"
+                       Grid.Column="1"/>
+                <Label Text="Mi perfil"
+                       TextColor="White"
+                       FontAttributes="Bold"
+                       HorizontalOptions="StartAndExpand"
+                       VerticalOptions="Start"
+                       Grid.Column="1"
+                       Grid.Row="1"/>
+            </Grid>
+        </DataTemplate>
+    </Shell.FlyoutHeaderTemplate>
 
     <Shell.ItemTemplate>
         <DataTemplate>
             <Grid ColumnDefinitions="50,*" Padding="10">
                 <Image Source="{Binding Icon}"
                        Margin="5"
-                       HeightRequest="40"/>
+                       HeightRequest="35"/>
                 <Label Grid.Column="1" Text="{Binding Title}" 
                        TextColor="White" 
                        FontAttributes="None"
@@ -22,93 +71,79 @@
         </DataTemplate>
     </Shell.ItemTemplate>
 
-    <FlyoutItem Title="Usuario 1234" Icon="usermenu.png" StyleClass="">
-        <Tab>
-            <ShellContent Route="SignIn" ContentTemplate="{DataTemplate local:SignIn}" />
-        </Tab>
-    </FlyoutItem>
-
     <FlyoutItem Title="Cursos" Icon="cursos.png">
         <Tab>
-            <ShellContent Route="Checador" ContentTemplate="{DataTemplate local:Checador}" />
+            <ShellContent Route="Cursos" ContentTemplate="{DataTemplate local:Cursos}" />
         </Tab>
     </FlyoutItem>
     
     <FlyoutItem Title="Solicitudes" Icon="solicitudes.png">
         <Tab>
-            <ShellContent Route="Checador" ContentTemplate="{DataTemplate local:Checador}" />
+            <ShellContent Route="Solicitudes" ContentTemplate="{DataTemplate local:Solicitudes}" />
         </Tab>
     </FlyoutItem>
     
     <FlyoutItem Title="Créditos generales" Icon="creditos.png">
         <Tab>
-            <ShellContent Route="Checador" ContentTemplate="{DataTemplate local:Checador}" />
+            <ShellContent Route="Creditos" ContentTemplate="{DataTemplate local:Creditos}" />
         </Tab>
     </FlyoutItem>
 
     <FlyoutItem Title="Caja de ahorro" Icon="ahorro.png">
         <Tab>
-            <ShellContent Route="Checador" ContentTemplate="{DataTemplate local:Checador}" />
+            <ShellContent Route="Caja" ContentTemplate="{DataTemplate local:Caja}" />
         </Tab>
     </FlyoutItem>
 
     <FlyoutItem Title="Recibos" Icon="recibos.png">
         <Tab>
-            <ShellContent Route="Checador" ContentTemplate="{DataTemplate local:Checador}" />
+            <ShellContent Route="Recibos" ContentTemplate="{DataTemplate local:Recibos}" />
         </Tab>
     </FlyoutItem>
 
     <FlyoutItem Title="Justificaciones" Icon="justificaciones.png">
         <Tab>
-            <ShellContent Route="Checador" ContentTemplate="{DataTemplate local:Checador}" />
+            <ShellContent Route="Justificaciones" ContentTemplate="{DataTemplate local:Justificaciones}" />
         </Tab>
     </FlyoutItem>
 
-    <FlyoutItem Title="Cerrar sesión" Icon="out.png">
-        <Tab>
-            <ShellContent Route="SignIn" ContentTemplate="{DataTemplate local:SignIn}" />
-        </Tab>
-    </FlyoutItem>
+    <ShellContent Route="SignIn" ContentTemplate="{DataTemplate local:SignIn}" />
 
-    <FlyoutItem Title="Dad software - recursos humanos" Icon="dad.png">
-        <Tab>
-            <ShellContent Route="SignIn" ContentTemplate="{DataTemplate local:SignIn}" />
-        </Tab>
-    </FlyoutItem>
+    <ShellContent ContentTemplate="{DataTemplate local:Inicio}" Route="Inicio"/>
 
-    <ShellContent
-    Title="In"
-    ContentTemplate="{DataTemplate local:SignIn}"
-    Route="SignIn" />
+    <ShellContent ContentTemplate="{DataTemplate local:Actividades}" Route="Actividades"/>
 
-    <ShellContent
-    Title="Up"
-    ContentTemplate="{DataTemplate local:SignUp}"
-    Route="SignUp" />
+    <ShellContent ContentTemplate="{DataTemplate local:Recordatorios}" Route="Recordatorios"/>
 
-    <ShellContent
-    Title="Home"
-    ContentTemplate="{DataTemplate local:HomePage}"
-    Route="HomePage"/>
+    <ShellContent ContentTemplate="{DataTemplate local:SignUp}" Route="SignUp"/>
 
-    <ShellContent
-    Title="Inicio"
-    ContentTemplate="{DataTemplate local:Inicio}"
-    Route="Inicio"/>
+    <ShellContent ContentTemplate="{DataTemplate local:Perfil}" Route="Perfil"/>
     
-    <ShellContent
-    Title="Checador"
-    ContentTemplate="{DataTemplate local:Checador}"
-    Route="Checador"/>
-    
-    <ShellContent
-    Title="Cumpleaños"
-    ContentTemplate="{DataTemplate local:Cumpleaños}"
-    Route="Cumpleaños"/>
+    <Shell.FlyoutFooterTemplate>
+        <DataTemplate>
+            <Grid BackgroundColor="#062C53"
+                  HeightRequest="100">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Button Text="Cerrar sesión"
+                        BackgroundColor="#062C53"
+                        TextColor="White"
+                        FontSize="19"
+                        HorizontalOptions="End"
+                        Grid.Row="0"
+                        Clicked="TapGestureRecognizer_Tapped_For_SignIn">
 
-    <ShellContent
-    Title="Notificaciones"
-    ContentTemplate="{DataTemplate local:Notificaciones}"
-    Route="Notificaciones"/>
+                </Button>
+                <Label Text="Dad software - recursos humanos"
+                       TextColor="White"
+                       FontSize="12"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       Grid.Row="1"/>
+            </Grid>
+        </DataTemplate>
+    </Shell.FlyoutFooterTemplate>
 
 </Shell>

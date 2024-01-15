@@ -121,6 +121,9 @@
 	  <MauiXaml Update="Actividades.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Perfil.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Recibos.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

@@ -2,11 +2,60 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ChekaT2.Actividades"
-             Title="Actividades">
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             Title="Cheka-T"
+             Padding="0,20,0,0"
+             IconImageSource="hambar.png"
+             BackgroundColor="WhiteSmoke">
+
     <VerticalStackLayout>
-        <Label 
-            Text="Actividades"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <Label Text="Actividades asignadas"
+           FontSize="24"
+           FontAttributes="Bold"
+           TextColor="Black"
+           Margin="15"
+           VerticalOptions="StartAndExpand"/>
+
+        <Frame Background="White"
+           BorderColor="LightGray"
+           CornerRadius="5"
+           Padding="8"
+           HeightRequest="112"
+           WidthRequest="325"
+           HorizontalOptions="CenterAndExpand"
+           VerticalOptions="CenterAndExpand">
+            <StackLayout>
+                <Label Text="Actividad a realizar"
+                   FontSize="17"
+                   FontAttributes="Bold"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   TextColor="Black"/>
+                <Label Text="Fecha de vencimiento: "
+                   FontSize="14"
+                   HorizontalOptions="StartAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   TextColor="Black"/>
+                <Label Text="Días restantes: "
+                   FontSize="14"
+                   HorizontalOptions="StartAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   TextColor="Black"/>
+            </StackLayout>
+        </Frame>
+
+        <Button Text="+"
+        BackgroundColor="#E76918"
+        TextColor="White"
+        FontSize="20"
+        FontAttributes="Bold"
+        HorizontalOptions="End"
+        CornerRadius="100"
+        Margin="20"
+        Grid.Row="0"
+        Clicked="TapGestureRecognizer_Tapped_For_Inicio">
+
+        </Button>
+
     </VerticalStackLayout>
 </ContentPage>

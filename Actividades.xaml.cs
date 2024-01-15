@@ -6,4 +6,9 @@ public partial class Actividades : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private async void TapGestureRecognizer_Tapped_For_Inicio(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("//Inicio");
+    }
 }
