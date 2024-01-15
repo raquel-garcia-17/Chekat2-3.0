@@ -6,4 +6,8 @@ public partial class Recordatorios : ContentPage
 	{
 		InitializeComponent();
 	}
+    private async void TapGestureRecognizer_Tapped_For_Inicio(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("//Inicio");
+    }
 }

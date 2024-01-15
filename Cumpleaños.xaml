@@ -2,12 +2,47 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ChekaT2.Cumpleaños"
-             Title="Cumpleaños">
+             Title="Cheka-T"
+             Padding="0,20,0,0"
+             IconImageSource="hambar.png"
+             BackgroundColor="WhiteSmoke">
+
     <VerticalStackLayout>
-        <Label 
-            Text="Cumpleaños"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <Label Text="Cumpleaños del mes"
+               FontSize="24"
+               FontAttributes="Bold"
+               TextColor="Black"
+               Margin="15"
+               VerticalOptions="StartAndExpand"/>
+
+        <Frame Background="White"
+               BorderColor="LightGray"
+               CornerRadius="5"
+               Padding="8"
+               HeightRequest="97"
+               WidthRequest="300"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand">
+            <StackLayout>
+                <Label Text="User name"
+                       FontSize="17"
+                       FontAttributes="Bold"
+                       HorizontalOptions="StartAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       TextColor="Black"/>
+                <Label Text="Área"
+                       FontSize="12"
+                       HorizontalOptions="StartAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       TextColor="Black"/>
+                <Label Text="DD/MM/YYYY"
+                       FontSize="12"
+                       HorizontalOptions="StartAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       TextColor="Black"/>
+            </StackLayout>
+        </Frame>
+
     </VerticalStackLayout>
 </ContentPage>
     

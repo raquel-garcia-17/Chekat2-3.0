@@ -7,14 +7,18 @@
              Padding="0,20,0,0"
              IconImageSource="hambar.png"
              BackgroundColor="WhiteSmoke">
+    <NavigationPage.TitleView>
+        <Slider HeightRequest="44"
+                WidthRequest="300" />
+    </NavigationPage.TitleView>
     
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
             <RowDefinition Height="150"/>
-            <RowDefinition Height="100"/>
-            <RowDefinition Height="200"/>
-            <RowDefinition Height="200"/>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="175"/>
+            <RowDefinition Height="175"/>
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -23,63 +27,106 @@
         </Grid.ColumnDefinitions>
 
         <Label Text="¡Bienvenido!"
-                VerticalOptions="Start" 
-                TextColor="Black"
-                FontAttributes="Bold"
-                FontSize="22"
-                Margin="10"
+               VerticalOptions="Start" 
+               TextColor="Black"
+               FontAttributes="Bold"
+               FontSize="22"
+               Margin="10"
                Grid.ColumnSpan="1"/>
-        
+
         <Frame Background="White"
                BorderColor="#898282"
                CornerRadius="5"
                Padding="8"
                HeightRequest="126"
-               WidthRequest="164"
+               WidthRequest="175"
                IsClippedToBounds="True"
-               HorizontalOptions="Center"
+               HorizontalOptions="End"
                VerticalOptions="Start"
                Grid.Row="1">
             <StackLayout>
-                <Image HorizontalOptions="Center" Source="checador.png" HeightRequest="69" WidthRequest="59" VerticalOptions="Center"/>
-                <Label Text="Checador"
-                       FontSize="15"
-                       FontAttributes="Bold"
-                       HorizontalOptions="Center"
-                       VerticalOptions="CenterAndExpand"
-                       TextColor="Black"/>
+                <Image HorizontalOptions="Center" 
+                       Source="checador.png" 
+                       HeightRequest="69" 
+                       WidthRequest="59" 
+                       VerticalOptions="Center"/>
+
+                <Button CornerRadius="10" 
+                        HeightRequest="50" 
+                        Text="Checador" 
+                        FontSize="15" 
+                        FontAttributes="Bold" 
+                        BackgroundColor="Transparent" 
+                        TextColor="Black"
+                        Clicked="TapGestureRecognizer_Tapped_For_Cumpleaños">
+                </Button>
             </StackLayout>
         </Frame>
 
         <Frame Background="White"
-               BorderColor="Black"
+               BorderColor="#898282"
                CornerRadius="5"
                Padding="8"
-               HeightRequest="77"
-               WidthRequest="164"
+               HeightRequest="90"
+               WidthRequest="175"
                IsClippedToBounds="True"
-               HorizontalOptions="Center"
+               HorizontalOptions="End"
                VerticalOptions="Start"
                Grid.Row="2">
-            <StackLayout>
-                <Image HorizontalOptions="Start" Source="cump.png" HeightRequest="69" WidthRequest="59"/>
-                <Label Text="P cumpleaños"
-                       FontSize="15"
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="18"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="64"/>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>
+
+                <ImageButton HorizontalOptions="StartAndExpand" 
+                             Source="cump.png" 
+                             HeightRequest="50" 
+                             WidthRequest="50" 
+                             Grid.Row="1"
+                             Clicked="TapGestureRecognizer_Tapped_For_Cumpleaños"/>
+                
+                <Label Text="User name"
+                       FontSize="14"
                        FontAttributes="Bold"
-                       HorizontalOptions="Center"
-                       TextColor="Black"/>
-            </StackLayout>
+                       HorizontalOptions="StartAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       TextColor="Black"
+                       Grid.Column="1"
+                       Grid.Row="0"/>
+                <Label Text="Ocupation"
+                       FontSize="12"
+                       FontAttributes="None"
+                       HorizontalOptions="StartAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       TextColor="Black"
+                       Grid.Column="1"
+                       Grid.Row="1"/>
+                <Label Text="DD/MM/YYYY"
+                       FontSize="12"
+                       HorizontalOptions="StartAndExpand"
+                       VerticalOptions="StartAndExpand"
+                       TextColor="Black"
+                       Grid.Column="1"
+                       Grid.Row="2"/>
+            </Grid>
+            
         </Frame>
 
         <Frame Background="White"
-               BorderColor="Black"
+               BorderColor="#898282"
                CornerRadius="5"
                Padding="8"
-               HeightRequest="228"
-               WidthRequest="164"
+               HeightRequest="238"
+               WidthRequest="170"
                IsClippedToBounds="True"
-               HorizontalOptions="Center"
-               VerticalOptions="Start"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="StartAndExpand"
                Grid.Row="1"
                Grid.Column="1">
             <StackLayout>
@@ -95,55 +142,98 @@
                FontSize="15"
                FontAttributes="Bold"
                HorizontalOptions="Start"
-               Margin="15"
+               Margin="25"
                Grid.Row="3"
                TextColor="Black"
                Grid.ColumnSpan="2"/>
 
         <Frame Background="White"
-               BorderColor="Black"
+               BorderColor="#898282"
                CornerRadius="5"
                Padding="8"
                HeightRequest="127"
-               WidthRequest="341"
+               WidthRequest="360"
                IsClippedToBounds="True"
                HorizontalOptions="Center"
-               VerticalOptions="Center"
+               VerticalOptions="EndAndExpand"
                Grid.Row="3"
                Grid.ColumnSpan="2">
+            <Button CornerRadius="10" 
+                    HeightRequest="50" 
+                    Text="Actividades" 
+                    FontSize="15" 
+                    FontAttributes="Bold" 
+                    BackgroundColor="Transparent" 
+                    TextColor="Black"
+                    Clicked="TapGestureRecognizer_Tapped_For_Actividades">
+            </Button>
         </Frame>
 
         <Label Text="Recordatorios"
                FontSize="15"
                FontAttributes="Bold"
                HorizontalOptions="Start"
-               Margin="15"
+               Margin="25"
                TextColor="Black"
                Grid.Row="4"
                Grid.ColumnSpan="2"/>
 
         <Frame Background="White"
-                BorderColor="Black"
-                CornerRadius="5"
-                Padding="8"
-                HeightRequest="127"
-                WidthRequest="341"
-                IsClippedToBounds="True"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                Grid.Row="4"
+               BorderColor="#898282"
+               CornerRadius="5"
+               Padding="8"
+               HeightRequest="127"
+               WidthRequest="360"
+               IsClippedToBounds="True"
+               HorizontalOptions="Center"
+               VerticalOptions="EndAndExpand"
+               Grid.Row="4"
                Grid.ColumnSpan="2">
+            <Button CornerRadius="10" 
+                    HeightRequest="127" 
+                    WidthRequest="341"
+                    Text="Recordatorio" 
+                    FontSize="15" 
+                    FontAttributes="Bold" 
+                    BackgroundColor="Transparent" 
+                    TextColor="Black"
+                    Clicked="TapGestureRecognizer_Tapped_For_Recordatorios">
+            </Button>
         </Frame>
-        
-        <StackLayout Grid.Row="5"
-                     Grid.ColumnSpan="1">
-            <Image HorizontalOptions="Start" Source="dad.png" HeightRequest="38" WidthRequest="38"/>
-            <Label Text="Dad Softare - Recursos humanos"
-                   FontSize="10"
-                   FontAttributes="Bold"
-                   HorizontalOptions="Center"
-                   TextColor="Black"/>
-        </StackLayout>
+
+        <Frame Background="Transparent"
+               BorderColor="Transparent"
+               HeightRequest="70"
+               WidthRequest="250"
+               IsClippedToBounds="True"
+               HorizontalOptions="Start"
+               VerticalOptions="CenterAndExpand"
+               Grid.Row="5"
+               Grid.ColumnSpan="1"
+               Margin="75">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="70"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="250"/>
+                </Grid.ColumnDefinitions>
+                
+                <Image HorizontalOptions="StartAndExpand"
+                       VerticalOptions="Start"
+                       Source="dad.png" 
+                       HeightRequest="25" 
+                       WidthRequest="25"/>
+                <Label Text="Dad software - recursos humanos"
+                       FontSize="10"
+                       TextColor="Black"
+                       HorizontalOptions="StartAndExpand"
+                       VerticalOptions="StartAndExpand"
+                       Margin="5"
+                       Grid.Column="1"/>
+            </Grid>
+        </Frame>
     </Grid>
 
 </ContentPage>
