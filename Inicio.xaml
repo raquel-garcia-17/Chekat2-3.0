@@ -130,14 +130,19 @@
                Grid.Row="1"
                Grid.Column="1">
             <StackLayout>
-                <Label Text="Día actual"
-                        FontSize="15"
-                        FontAttributes="Bold"
-                        HorizontalOptions="Center"
-                       TextColor="Black"/>
+                <DatePicker MinimumDate="{Binding MinDate}"
+                            MaximumDate="{Binding MaxDate}"
+                            Date="{Binding SelectedDate}" 
+                            FontSize="30" 
+                            FontAttributes="Bold"
+                            HorizontalOptions="StartAndExpand"
+                            BackgroundColor="Aquamarine" 
+                            WidthRequest="154"
+                            HeightRequest="224"
+                            />
             </StackLayout>
         </Frame>
-
+         
         <Label Text="Actividades"
                FontSize="15"
                FontAttributes="Bold"

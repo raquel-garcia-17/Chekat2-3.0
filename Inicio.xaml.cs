@@ -22,4 +22,11 @@ public partial class Inicio : ContentPage
     {
         await Shell.Current.GoToAsync("//Recordatorios");
     }
+
+    DatePicker datePicker = new DatePicker
+    {
+        MinimumDate = new DateTime(1900, 1, 1),
+        MaximumDate = new DateTime(2100, 12, 31),
+        Date = new DateTime(2018, 6, 21)
+    };
 }

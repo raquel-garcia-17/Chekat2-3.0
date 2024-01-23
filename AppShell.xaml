@@ -118,7 +118,7 @@
     <ShellContent ContentTemplate="{DataTemplate local:SignUp}" Route="SignUp"/>
 
     <ShellContent ContentTemplate="{DataTemplate local:Perfil}" Route="Perfil"/>
-    
+
     <Shell.FlyoutFooterTemplate>
         <DataTemplate>
             <Grid BackgroundColor="#062C53"
