@@ -57,10 +57,12 @@
 	  <None Remove="Resources\Images\cump.png" />
 	  <None Remove="Resources\Images\cursos.png" />
 	  <None Remove="Resources\Images\dad.png" />
+	  <None Remove="Resources\Images\edit.png" />
 	  <None Remove="Resources\Images\hambar.png" />
 	  <None Remove="Resources\Images\justificaciones.png" />
 	  <None Remove="Resources\Images\lock.png" />
 	  <None Remove="Resources\Images\out.png" />
+	  <None Remove="Resources\Images\plus.png" />
 	  <None Remove="Resources\Images\recibos.png" />
 	  <None Remove="Resources\Images\rfc.png" />
 	  <None Remove="Resources\Images\solicitudes.png" />
@@ -102,9 +104,6 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Cursos.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="HomePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Cumpleaños.xaml">

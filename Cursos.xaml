@@ -2,11 +2,59 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ChekaT2.Cursos"
-             Title="Cursos">
+             Title="Cheka-T"
+             Padding="0,20,0,0"
+             IconImageSource="hambar.png"
+             BackgroundColor="WhiteSmoke">
     <VerticalStackLayout>
-        <Label 
-            Text="Cursos"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <Label Text="Cursos"
+               VerticalOptions="Start" 
+               TextColor="Black"
+               FontAttributes="Bold"
+               FontSize="22"
+               Margin="10"/>
+        
+        <Frame Background="White"
+               BorderColor="#898282"
+               CornerRadius="5"
+               Padding="8"
+               HeightRequest="90"
+               WidthRequest="360"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand">
+            <Label Text="Por el momento no hay ningún curso programado"
+                   VerticalOptions="Start" 
+                   TextColor="Black"
+                   FontSize="15"
+                   Margin="10"/>
+        </Frame>
+
+        <Label Text="Kardex de cursos"
+               VerticalOptions="Start" 
+               TextColor="Black"
+               FontAttributes="Bold"
+               FontSize="22"
+               Margin="10"/>
+
+        <Frame Background="White"
+               BorderColor="#898282"
+               CornerRadius="5"
+               Padding="8"
+               HeightRequest="90"
+               WidthRequest="360"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand">
+            <Button CornerRadius="10" 
+                    HeightRequest="50"
+                    WidthRequest="270"
+                    Text="Ver kardex de cursos" 
+                    FontSize="15" 
+                    FontAttributes="Bold" 
+                    BackgroundColor="#EC8746" 
+                    TextColor="Black">
+                <!-- Clicked="TapGestureRecognizer_Tapped_For_Kardex"> -->
+            </Button>
+        </Frame>
+
     </VerticalStackLayout>
 </ContentPage>

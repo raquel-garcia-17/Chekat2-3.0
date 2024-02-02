@@ -2,11 +2,83 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ChekaT2.Recibos"
-             Title="Recibos">
+             Title="Cheka-T"
+             Padding="0,20,0,0"
+             IconImageSource="hambar.png"
+             BackgroundColor="WhiteSmoke">
     <VerticalStackLayout>
-        <Label 
-            Text="Recibos"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <Label Text="Recibos de pago"
+               VerticalOptions="Start" 
+               TextColor="Black"
+               FontAttributes="Bold"
+               FontSize="22"
+               Margin="10"/>
+
+        <Frame Background="White"
+               BorderColor="#898282"
+               CornerRadius="5"
+               Padding="8"
+               HeightRequest="150"
+               WidthRequest="360"
+               IsClippedToBounds="True"
+               HorizontalOptions="Center"
+               VerticalOptions="EndAndExpand">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="38"/>
+                    <RowDefinition Height="38"/>
+                    <RowDefinition Height="60"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="210"/>
+                    <ColumnDefinition Width="150"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Número de recibos actuales:" 
+                       FontSize="13"
+                       FontAttributes="Bold"
+                       HorizontalOptions="EndAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       TextColor="Black"/>
+
+                <Label Text="-"
+                       FontSize="13"
+                       Margin="7"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Grid.Column="1" 
+                       TextColor="Black"/>
+
+                <Label Text="Número de recibos anteriores:" 
+                       FontSize="13"
+                       FontAttributes="Bold"
+                       HorizontalOptions="EndAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Grid.Row="1"
+                       TextColor="Black"/>
+
+                <Label Text="-"
+                       FontSize="13"
+                       Margin="7"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Grid.Column="1"
+                       Grid.Row="1"
+                       TextColor="Black"/>
+
+                <Button CornerRadius="50" 
+                        HeightRequest="40" 
+                        WidthRequest="155"
+                        BackgroundColor="#EC8746" 
+                        Text="Ver mis recibos"
+                        TextColor="White"
+                        FontSize="14"
+                        ContentLayout="Right, 20"
+                        Grid.ColumnSpan="2"
+                        Grid.Row="3"
+                        VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="CenterAndExpand"/>
+
+            </Grid>
+        </Frame>
     </VerticalStackLayout>
 </ContentPage>

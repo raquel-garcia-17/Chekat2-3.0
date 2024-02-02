@@ -6,10 +6,1721 @@
              Padding="0,20,0,0"
              IconImageSource="hambar.png"
              BackgroundColor="WhiteSmoke">
-    <VerticalStackLayout>
-        <Label 
-            Text="Perfil de usuario"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <ScrollView VerticalOptions="FillAndExpand"
+                VerticalScrollBarVisibility="Never">
+    <StackLayout >
+        <!-- Datos personales -->
+        <Label Text="Datos personales"
+               FontSize="18"
+               FontAttributes="Bold"
+               HorizontalOptions="Start"
+               Margin="20"
+               Grid.Row="3"
+               TextColor="Black"/>
+        
+        <Frame Background="White"
+               BorderColor="#898282"
+               CornerRadius="5"
+               Padding="8"
+               HeightRequest="230"
+               WidthRequest="360"
+               IsClippedToBounds="True"
+               HorizontalOptions="Center"
+               VerticalOptions="EndAndExpand">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="38"/>
+                    <RowDefinition Height="38"/>
+                    <RowDefinition Height="38"/>
+                    <RowDefinition Height="38"/>
+                    <RowDefinition Height="38"/>
+                    <RowDefinition Height="45"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="130"/>
+                    <ColumnDefinition Width="200"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Estado civil:" 
+                       FontSize="13"
+                       FontAttributes="Bold"
+                       HorizontalOptions="EndAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       TextColor="Black"/>
+                
+                <Label Text="Soltero"
+                       FontSize="13"
+                       Margin="7"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Grid.Column="1" 
+                       TextColor="Black"/>
+                    
+                <Label Text="Nacimiento:" 
+                       FontSize="13"
+                       FontAttributes="Bold"
+                       HorizontalOptions="EndAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Grid.Row="1"
+                       TextColor="Black"/>
+
+                <Label Text="DD/MM/YYYY"
+                       FontSize="13"
+                       Margin="7"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Grid.Column="1"
+                       Grid.Row="1"
+                       TextColor="Black"/>
+
+                <Label Text="Peso:" 
+                       FontSize="13"
+                       FontAttributes="Bold"
+                       HorizontalOptions="EndAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Grid.Row="2"
+                       TextColor="Black"/>
+
+                <Label Text="0 kg"
+                       FontSize="13"
+                       Margin="7"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Grid.Column="1"
+                       Grid.Row="2"
+                       TextColor="Black"/>
+
+                <Label Text="Estatura:" 
+                       FontSize="13"
+                       FontAttributes="Bold"
+                       HorizontalOptions="EndAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Grid.Row="3"
+                       TextColor="Black"/>
+
+                <Label Text="0 cm"
+                       FontSize="13"
+                       Margin="7"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Grid.Column="1"
+                       Grid.Row="3"
+                       TextColor="Black"/>
+
+                <Label Text="Género:" 
+                       FontSize="13"
+                       FontAttributes="Bold"
+                       HorizontalOptions="EndAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Grid.Row="4"
+                       TextColor="Black"/>
+
+                <Label Text="Femenino"
+                       FontSize="13"
+                       Margin="7"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Grid.Column="1"
+                       Grid.Row="4"
+                       TextColor="Black"/>
+
+                <Button CornerRadius="50" 
+                        HeightRequest="35" 
+                        WidthRequest="35"
+                        BackgroundColor="#062C53" 
+                        ImageSource="edit.png"
+                        ContentLayout="Right, 20"
+                        Grid.Column="1"
+                        Grid.RowSpan="5"
+                        VerticalOptions="End"
+                        HorizontalOptions="EndAndExpand"/>
+
+            </Grid>
+        </Frame>
+        
+        <!-- Estado de salud -->
+        <Label Text="Estado de salud"
+               FontSize="18"
+               FontAttributes="Bold"
+               HorizontalOptions="Start"
+               Margin="20"
+               Grid.Row="3"
+               TextColor="Black"/>
+
+        <Frame Background="White"
+               BorderColor="#898282"
+               CornerRadius="5"
+               Padding="8"
+               HeightRequest="230"
+               WidthRequest="360"
+               IsClippedToBounds="True"
+               HorizontalOptions="Center"
+               VerticalOptions="EndAndExpand">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="38"/>
+                    <RowDefinition Height="38"/>
+                    <RowDefinition Height="38"/>
+                    <RowDefinition Height="38"/>
+                    <RowDefinition Height="38"/>
+                    <RowDefinition Height="45"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="180"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Estado de salud:" 
+                       FontSize="13"
+                       FontAttributes="Bold"
+                       HorizontalOptions="EndAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       TextColor="Black"/>
+
+                <Label Text="Bueno"
+                       FontSize="13"
+                       Margin="7"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Grid.Column="1" 
+                       TextColor="Black"/>
+
+                <Label Text="Deporte que practica:" 
+                       FontSize="13"
+                       FontAttributes="Bold"
+                       HorizontalOptions="EndAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Grid.Row="1"
+                       TextColor="Black"/>
+
+                <Label Text="Fútbol 7"
+                       FontSize="13"
+                       Margin="7"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Grid.Column="1"
+                       Grid.Row="1"
+                       TextColor="Black"/>
+
+                <Label Text="Club social o deportivo:" 
+                       FontSize="13"
+                       FontAttributes="Bold"
+                       HorizontalOptions="EndAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Grid.Row="2"
+                       TextColor="Black"/>
+
+                <Label Text="-"
+                       FontSize="13"
+                       Margin="7"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Grid.Column="1"
+                       Grid.Row="2"
+                       TextColor="Black"/>
+
+                <Label Text="Pasatiempo favorito:" 
+                       FontSize="13"
+                       FontAttributes="Bold"
+                       HorizontalOptions="EndAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Grid.Row="3"
+                       TextColor="Black"/>
+
+                <Label Text="Jugar fútbol"
+                       FontSize="13"
+                       Margin="7"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Grid.Column="1"
+                       Grid.Row="3"
+                       TextColor="Black"/>
+
+                <Label Text="Enfermedades crónicas:" 
+                       FontSize="13"
+                       FontAttributes="Bold"
+                       HorizontalOptions="EndAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Grid.Row="4"
+                       TextColor="Black"/>
+
+                <Label Text="Ninguna"
+                       FontSize="13"
+                       Margin="7"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Grid.Column="1"
+                       Grid.Row="4"
+                       TextColor="Black"/>
+
+                <Button CornerRadius="50" 
+                        HeightRequest="35" 
+                        WidthRequest="35"
+                        BackgroundColor="#062C53" 
+                        ImageSource="edit.png"
+                        ContentLayout="Right, 20"
+                        Grid.Column="1"
+                        Grid.RowSpan="5"
+                        VerticalOptions="End"
+                        HorizontalOptions="EndAndExpand"/>
+
+            </Grid>
+        </Frame>
+
+        <!-- Documentación -->
+        <Label Text="Documentación"
+        FontSize="18"
+        FontAttributes="Bold"
+        HorizontalOptions="Start"
+        Margin="20"
+        Grid.Row="3"
+        TextColor="Black"/>
+
+        <Frame Background="White"
+        BorderColor="#898282"
+        CornerRadius="5"
+        Padding="8"
+        HeightRequest="270"
+        WidthRequest="360"
+        IsClippedToBounds="True"
+        HorizontalOptions="Center"
+        VerticalOptions="EndAndExpand">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="38"/>
+                    <RowDefinition Height="38"/>
+                    <RowDefinition Height="38"/>
+                    <RowDefinition Height="38"/>
+                    <RowDefinition Height="38"/>
+                    <RowDefinition Height="38"/>
+                    <RowDefinition Height="45"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="180"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="N° de pasaporte:" 
+                        FontSize="13"
+                        FontAttributes="Bold"
+                        HorizontalOptions="EndAndExpand"
+                        VerticalOptions="CenterAndExpand"
+                        TextColor="Black"/>
+
+                <Label Text="1234567890"
+                        FontSize="13"
+                        Margin="7"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="CenterAndExpand"
+                        Grid.Column="1" 
+                        TextColor="Black"/>
+
+                <Label Text="N° de servicio militar:" 
+                        FontSize="13"
+                        FontAttributes="Bold"
+                        HorizontalOptions="EndAndExpand"
+                        VerticalOptions="CenterAndExpand"
+                        Grid.Row="1"
+                        TextColor="Black"/>
+
+                <Label Text="1234567"
+                        FontSize="13"
+                        Margin="7"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="CenterAndExpand"
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        TextColor="Black"/>
+
+                <Label Text="N° licencia de manejo:" 
+                        FontSize="13"
+                        FontAttributes="Bold"
+                        HorizontalOptions="EndAndExpand"
+                        VerticalOptions="CenterAndExpand"
+                        Grid.Row="2"
+                        TextColor="Black"/>
+
+                <Label Text="A123456789"
+                        FontSize="13"
+                        Margin="7"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="CenterAndExpand"
+                        Grid.Column="1"
+                        Grid.Row="2"
+                        TextColor="Black"/>
+
+                <Label Text="Tipo de licencia:" 
+                        FontSize="13"
+                        FontAttributes="Bold"
+                        HorizontalOptions="EndAndExpand"
+                        VerticalOptions="CenterAndExpand"
+                        Grid.Row="3"
+                        TextColor="Black"/>
+
+                <Label Text="Automivilista"
+                        FontSize="13"
+                        Margin="7"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="CenterAndExpand"
+                        Grid.Column="1"
+                        Grid.Row="3"
+                        TextColor="Black"/>
+                
+                <Line X1="10"
+                      Y1="0"
+                      X2="350"
+                      Y2="0"
+                      Stroke="Black" 
+                      HorizontalOptions="CenterAndExpand"
+                      VerticalOptions="EndAndExpand"
+                      Grid.Row="4"
+                      Grid.ColumnSpan="2"/>
+
+                <Label Text="Archivos" 
+                       FontSize="13"
+                       FontAttributes="Bold"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Grid.Row="4"
+                       Grid.ColumnSpan="2"
+                       TextColor="Black"/>
+
+                <Label Text="Nombre del docto"
+                       FontSize="13"
+                       Margin="7"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Grid.Row="5"
+                       TextColor="Black"/>
+
+                <Label Text="DD/MM/YYYY 10:00 a.m."
+                       FontSize="13"
+                       Margin="-10"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Grid.Column="1"
+                       Grid.Row="5"
+                       TextColor="Black"/>
+
+                    <Button CornerRadius="50" 
+                        HeightRequest="35" 
+                        WidthRequest="35"
+                        BackgroundColor="#062C53" 
+                        ImageSource="edit.png"
+                        ContentLayout="Right, 20"
+                        Grid.Column="1"
+                        Grid.RowSpan="6"
+                        VerticalOptions="End"
+                        HorizontalOptions="EndAndExpand"/>
+
+            </Grid>
+        </Frame>
+
+        <!-- Escolaridad -->
+        <Label Text="Escolaridad"
+                FontSize="18"
+                FontAttributes="Bold"
+                HorizontalOptions="Start"
+                Margin="20"
+                Grid.Row="3"
+                TextColor="Black"/>
+
+        <Frame Background="White"
+                BorderColor="#898282"
+                CornerRadius="5"
+                Padding="8"
+                HeightRequest="190"
+                WidthRequest="360"
+                IsClippedToBounds="True"
+                HorizontalOptions="Center"
+                VerticalOptions="EndAndExpand">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="38"/>
+                    <RowDefinition Height="38"/>
+                    <RowDefinition Height="38"/>
+                    <RowDefinition Height="38"/>
+                    <RowDefinition Height="45"/>
+                    </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="180"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Especialidad:" 
+                        FontSize="13"
+                        FontAttributes="Bold"
+                        HorizontalOptions="EndAndExpand"
+                        VerticalOptions="CenterAndExpand"
+                        TextColor="Black"/>
+
+                <Label Text="Ingeniería en software"
+                        FontSize="13"
+                        Margin="7"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="CenterAndExpand"
+                        Grid.Column="1" 
+                        TextColor="Black"/>
+
+                <Label Text="Institución:" 
+                        FontSize="13"
+                        FontAttributes="Bold"
+                        HorizontalOptions="EndAndExpand"
+                        VerticalOptions="CenterAndExpand"
+                        Grid.Row="1"
+                        TextColor="Black"/>
+
+                <Label Text="UNIPOLI"
+                        FontSize="13"
+                        Margin="7"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="CenterAndExpand"
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        TextColor="Black"/>
+
+                <Label Text="Fecha de inicio:" 
+                        FontSize="13"
+                        FontAttributes="Bold"
+                        HorizontalOptions="EndAndExpand"
+                        VerticalOptions="CenterAndExpand"
+                        Grid.Row="2"
+                        TextColor="Black"/>
+
+                <Label Text="DD/MM/YYYY"
+                        FontSize="13"
+                        Margin="7"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="CenterAndExpand"
+                        Grid.Column="1"
+                        Grid.Row="2"
+                        TextColor="Black"/>
+
+                <Label Text="Fecha de término:" 
+                        FontSize="13"
+                        FontAttributes="Bold"
+                        HorizontalOptions="EndAndExpand"
+                        VerticalOptions="CenterAndExpand"
+                        Grid.Row="3"
+                        TextColor="Black"/>
+
+                <Label Text="DD/MM/YYYY"
+                        FontSize="13"
+                        Margin="7"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="CenterAndExpand"
+                        Grid.Column="1"
+                        Grid.Row="3"
+                        TextColor="Black"/>
+                
+                <Button CornerRadius="50" 
+                         HeightRequest="35" 
+                         WidthRequest="35"
+                         BackgroundColor="#062C53" 
+                         ImageSource="edit.png"
+                         ContentLayout="Right, 20"
+                         Grid.Column="1"
+                         Grid.RowSpan="4"
+                         VerticalOptions="End"
+                         HorizontalOptions="EndAndExpand"/>
+
+            </Grid>
+        </Frame>
+
+            <!-- Experiencia laboral -->
+            <Label Text="Experiencia laboral"
+                    FontSize="18"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Start"
+                    Margin="20"
+                    Grid.Row="3"
+                    TextColor="Black"/>
+
+            <Frame Background="White"
+                    BorderColor="#898282"
+                    CornerRadius="5"
+                    Padding="8"
+                    HeightRequest="190"
+                    WidthRequest="360"
+                    IsClippedToBounds="True"
+                    HorizontalOptions="Center"
+                    VerticalOptions="EndAndExpand">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="45"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition Width="180"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Empresa:" 
+                            FontSize="13"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            TextColor="Black"/>
+
+                    <Label Text="Dad software"
+                            FontSize="13"
+                            Margin="7"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Column="1" 
+                            TextColor="Black"/>
+
+                    <Label Text="Área:" 
+                            FontSize="13"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Row="1"
+                            TextColor="Black"/>
+
+                    <Label Text="Diseño UI/UX"
+                            FontSize="13"
+                            Margin="7"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Column="1"
+                            Grid.Row="1"
+                            TextColor="Black"/>
+
+                    <Label Text="Antigüedad:" 
+                            FontSize="13"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Row="2"
+                            TextColor="Black"/>
+
+                    <Label Text="- años"
+                            FontSize="13"
+                            Margin="7"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Column="1"
+                            Grid.Row="2"
+                            TextColor="Black"/>
+
+                    <Label Text="Motivo de baja:" 
+                            FontSize="13"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Row="3"
+                            TextColor="Black"/>
+
+                    <Label Text="-"
+                            FontSize="13"
+                            Margin="7"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Column="1"
+                            Grid.Row="3"
+                            TextColor="Black"/>
+
+                    <Button CornerRadius="50" 
+                             HeightRequest="35" 
+                             WidthRequest="35"
+                             BackgroundColor="#062C53" 
+                             ImageSource="edit.png"
+                             ContentLayout="Right, 20"
+                             Grid.Column="1"
+                             Grid.RowSpan="4"
+                             VerticalOptions="End"
+                             HorizontalOptions="EndAndExpand"/>
+
+                </Grid>
+            </Frame>
+
+            <!-- Habilidades -->
+            <Label Text="Habilidades"
+                    FontSize="18"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Start"
+                    Margin="20"
+                    Grid.Row="3"
+                    TextColor="Black"/>
+
+            <Frame Background="White"
+                    BorderColor="#898282"
+                    CornerRadius="5"
+                    Padding="8"
+                    HeightRequest="100"
+                    WidthRequest="360"
+                    IsClippedToBounds="True"
+                    HorizontalOptions="Center"
+                    VerticalOptions="EndAndExpand">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="45"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition Width="180"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Habilidad:" 
+                            FontSize="13"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            TextColor="Black"/>
+
+                    <Label Text="-"
+                            FontSize="13"
+                            Margin="7"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Column="1" 
+                            TextColor="Black"/>
+
+                    <Label Text="Observaciones:" 
+                            FontSize="13"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Row="1"
+                            TextColor="Black"/>
+
+                    <Label Text="-"
+                            FontSize="13"
+                            Margin="7"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Column="1"
+                            Grid.Row="1"
+                            TextColor="Black"/>
+
+                    <Button CornerRadius="50" 
+                             HeightRequest="35" 
+                             WidthRequest="35"
+                             BackgroundColor="#062C53" 
+                             ImageSource="edit.png"
+                             ContentLayout="Right, 20"
+                             Grid.Column="1"
+                             Grid.RowSpan="2"
+                             VerticalOptions="End"
+                             HorizontalOptions="EndAndExpand"/>
+
+                </Grid>
+            </Frame>
+
+            <!-- Idiomas -->
+            <Label Text="Idiomas"
+                   FontSize="18"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Start"
+                   Margin="20"
+                   Grid.Row="3"
+                   TextColor="Black"/>
+
+            <Frame Background="White"
+                   BorderColor="#898282"
+                   CornerRadius="5"
+                   Padding="8"
+                   HeightRequest="230"
+                   WidthRequest="360"
+                   IsClippedToBounds="True"
+                   HorizontalOptions="Center"
+                   VerticalOptions="EndAndExpand">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="45"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="130"/>
+                        <ColumnDefinition Width="200"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Idioma:" 
+                           FontSize="13"
+                           FontAttributes="Bold"
+                           HorizontalOptions="EndAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           TextColor="Black"/>
+
+                    <Label Text="Inglés"
+                           FontSize="13"
+                           Margin="7"
+                           HorizontalOptions="FillAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.Column="1" 
+                           TextColor="Black"/>
+
+                    <Label Text="Habla:" 
+                           FontSize="13"
+                           FontAttributes="Bold"
+                           HorizontalOptions="EndAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.Row="1"
+                           TextColor="Black"/>
+
+                    <Label Text="Sí"
+                           FontSize="13"
+                           Margin="7"
+                           HorizontalOptions="FillAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.Column="1"
+                           Grid.Row="1"
+                           TextColor="Black"/>
+
+                    <Label Text="Lee:" 
+                           FontSize="13"
+                           FontAttributes="Bold"
+                           HorizontalOptions="EndAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.Row="2"
+                           TextColor="Black"/>
+
+                    <Label Text="Sí"
+                           FontSize="13"
+                           Margin="7"
+                           HorizontalOptions="FillAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.Column="1"
+                           Grid.Row="2"
+                           TextColor="Black"/>
+
+                    <Label Text="Escribe:" 
+                           FontSize="13"
+                           FontAttributes="Bold"
+                           HorizontalOptions="EndAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.Row="3"
+                           TextColor="Black"/>
+
+                    <Label Text="Sí"
+                           FontSize="13"
+                           Margin="7"
+                           HorizontalOptions="FillAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.Column="1"
+                           Grid.Row="3"
+                           TextColor="Black"/>
+
+                    <Label Text="Certificación:" 
+                           FontSize="13"
+                           FontAttributes="Bold"
+                           HorizontalOptions="EndAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.Row="4"
+                           TextColor="Black"/>
+
+                    <Label Text="ITEP B2"
+                           FontSize="13"
+                           Margin="7"
+                           HorizontalOptions="FillAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.Column="1"
+                           Grid.Row="4"
+                           TextColor="Black"/>
+
+                    <Button CornerRadius="50" 
+                            HeightRequest="35" 
+                            WidthRequest="35"
+                            BackgroundColor="#062C53" 
+                            ImageSource="edit.png"
+                            ContentLayout="Right, 20"
+                            Grid.Column="1"
+                            Grid.RowSpan="5"
+                            VerticalOptions="End"
+                            HorizontalOptions="EndAndExpand"/>
+
+                </Grid>
+            </Frame>
+
+            <!-- Localización -->
+            <Label Text="Localización"
+                   FontSize="18"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Start"
+                   Margin="20"
+                   Grid.Row="3"
+                   TextColor="Black"/>
+
+            <Frame Background="White"
+                   BorderColor="#898282"
+                   CornerRadius="5"
+                   Padding="8"
+                   HeightRequest="268"
+                   WidthRequest="360"
+                   IsClippedToBounds="True"
+                   HorizontalOptions="Center"
+                   VerticalOptions="EndAndExpand">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="45"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="130"/>
+                        <ColumnDefinition Width="200"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Calle y número:" 
+                           FontSize="13"
+                           FontAttributes="Bold"
+                           HorizontalOptions="EndAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           TextColor="Black"/>
+
+                    <Label Text="-"
+                           FontSize="13"
+                           Margin="7"
+                           HorizontalOptions="FillAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.Column="1" 
+                           TextColor="Black"/>
+
+                    <Label Text="País:" 
+                           FontSize="13"
+                           FontAttributes="Bold"
+                           HorizontalOptions="EndAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.Row="1"
+                           TextColor="Black"/>
+
+                    <Label Text="México"
+                           FontSize="13"
+                           Margin="7"
+                           HorizontalOptions="FillAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.Column="1"
+                           Grid.Row="1"
+                           TextColor="Black"/>
+
+                    <Label Text="Estado:" 
+                           FontSize="13"
+                           FontAttributes="Bold"
+                           HorizontalOptions="EndAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.Row="2"
+                           TextColor="Black"/>
+
+                    <Label Text="Durango"
+                           FontSize="13"
+                           Margin="7"
+                           HorizontalOptions="FillAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.Column="1"
+                           Grid.Row="2"
+                           TextColor="Black"/>
+
+                    <Label Text="Municipio:" 
+                           FontSize="13"
+                           FontAttributes="Bold"
+                           HorizontalOptions="EndAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.Row="3"
+                           TextColor="Black"/>
+
+                    <Label Text="Durango"
+                           FontSize="13"
+                           Margin="7"
+                           HorizontalOptions="FillAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.Column="1"
+                           Grid.Row="3"
+                           TextColor="Black"/>
+
+                    <Label Text="Código Postal:" 
+                           FontSize="13"
+                           FontAttributes="Bold"
+                           HorizontalOptions="EndAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.Row="4"
+                           TextColor="Black"/>
+
+                    <Label Text="34000"
+                           FontSize="13"
+                           Margin="7"
+                           HorizontalOptions="FillAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.Column="1"
+                           Grid.Row="4"
+                           TextColor="Black"/>
+
+                    <Label Text="Vivienda propia:" 
+                           FontSize="13"
+                           FontAttributes="Bold"
+                           HorizontalOptions="EndAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.Row="5"
+                           TextColor="Black"/>
+
+                    <Label Text="Sí"
+                           FontSize="13"
+                           Margin="7"
+                           HorizontalOptions="FillAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.Column="1"
+                           Grid.Row="5"
+                           TextColor="Black"/>
+
+                    <Button CornerRadius="50" 
+                            HeightRequest="35" 
+                            WidthRequest="35"
+                            BackgroundColor="#062C53" 
+                            ImageSource="edit.png"
+                            ContentLayout="Right, 20"
+                            Grid.Column="1"
+                            Grid.RowSpan="6"
+                            VerticalOptions="End"
+                            HorizontalOptions="EndAndExpand"/>
+
+                </Grid>
+            </Frame>
+
+            <Frame HeightRequest="20"
+                   BackgroundColor="Transparent"
+                   BorderColor="Transparent">
+                
+            </Frame>
+        
+            <Frame Background="White"
+                    BorderColor="#898282"
+                    CornerRadius="5"
+                    Padding="8"
+                    HeightRequest="150"
+                    WidthRequest="360"
+                    IsClippedToBounds="True"
+                    HorizontalOptions="Center"
+                    VerticalOptions="EndAndExpand">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="45"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition Width="180"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Correo electrónico:" 
+                            FontSize="13"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            TextColor="Black"/>
+
+                    <Label Text="-"
+                            FontSize="13"
+                            Margin="7"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Column="1" 
+                            TextColor="Black"/>
+
+                    <Label Text="Teléfono de casa:" 
+                            FontSize="13"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Row="1"
+                            TextColor="Black"/>
+
+                    <Label Text="-"
+                            FontSize="13"
+                            Margin="7"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Column="1"
+                            Grid.Row="1"
+                            TextColor="Black"/>
+
+                    <Label Text="Celular:" 
+                            FontSize="13"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Row="2"
+                            TextColor="Black"/>
+
+                    <Label Text="-"
+                            FontSize="13"
+                            Margin="7"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Column="1"
+                            Grid.Row="2"
+                            TextColor="Black"/>
+
+                    <Button CornerRadius="50" 
+                             HeightRequest="35" 
+                             WidthRequest="35"
+                             BackgroundColor="#062C53" 
+                             ImageSource="edit.png"
+                             ContentLayout="Right, 20"
+                             Grid.Column="1"
+                             Grid.RowSpan="3"
+                             VerticalOptions="End"
+                             HorizontalOptions="EndAndExpand"/>
+
+                </Grid>
+            </Frame>
+
+            <Frame HeightRequest="20"
+                   BackgroundColor="Transparent"
+                   BorderColor="Transparent">
+
+            </Frame>
+
+            <Frame Background="White"
+                    BorderColor="#898282"
+                    CornerRadius="5"
+                    Padding="8"
+                    HeightRequest="150"
+                    WidthRequest="360"
+                    IsClippedToBounds="True"
+                    HorizontalOptions="Center"
+                    VerticalOptions="EndAndExpand">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="45"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition Width="180"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Mpio de nacimiento:" 
+                            FontSize="13"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            TextColor="Black"/>
+
+                    <Label Text="-"
+                            FontSize="13"
+                            Margin="7"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Column="1" 
+                            TextColor="Black"/>
+
+                    <Label Text="Entidad de nacimiento:" 
+                            FontSize="13"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Row="1"
+                            TextColor="Black"/>
+
+                    <Label Text="-"
+                            FontSize="13"
+                            Margin="7"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Column="1"
+                            Grid.Row="1"
+                            TextColor="Black"/>
+
+                    <Label Text="Nacionalidad:" 
+                            FontSize="13"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Row="2"
+                            TextColor="Black"/>
+
+                    <Label Text="Mexicana"
+                            FontSize="13"
+                            Margin="7"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Column="1"
+                            Grid.Row="2"
+                            TextColor="Black"/>
+
+                    <Button CornerRadius="50" 
+                             HeightRequest="35" 
+                             WidthRequest="35"
+                             BackgroundColor="#062C53" 
+                             ImageSource="edit.png"
+                             ContentLayout="Right, 20"
+                             Grid.Column="1"
+                             Grid.RowSpan="3"
+                             VerticalOptions="End"
+                             HorizontalOptions="EndAndExpand"/>
+
+                </Grid>
+            </Frame>
+
+            <!-- Datos familiares -->
+            <Label Text="Datos familiares"
+                    FontSize="18"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Start"
+                    Margin="20"
+                    Grid.Row="3"
+                    TextColor="Black"/>
+
+            <Frame Background="White"
+                    BorderColor="#898282"
+                    CornerRadius="5"
+                    Padding="8"
+                    HeightRequest="190"
+                    WidthRequest="360"
+                    IsClippedToBounds="True"
+                    HorizontalOptions="Center"
+                    VerticalOptions="EndAndExpand">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="45"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="110"/>
+                        <ColumnDefinition Width="170"/>
+                        <ColumnDefinition Width="80"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Padre" 
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           HorizontalOptions="CenterAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.ColumnSpan="3"
+                           TextColor="Black"/>
+
+                    <Label Text="Nombre:" 
+                            FontSize="13"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Row="1"
+                            TextColor="Black"/>
+
+                    <Label Text="-"
+                            FontSize="13"
+                            Margin="7"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Column="1"
+                            Grid.Row="1"
+                            TextColor="Black"/>
+
+                    <Label Text="Ocupación:" 
+                            FontSize="13"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Row="2"
+                            TextColor="Black"/>
+
+                    <Label Text="-"
+                            FontSize="13"
+                            Margin="7"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Column="1"
+                            Grid.Row="2"
+                            TextColor="Black"/>
+
+                    <Label Text="Domicilio:" 
+                            FontSize="13"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Row="3"
+                            TextColor="Black"/>
+
+                    <Label Text="-"
+                            FontSize="13"
+                            Margin="7"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Column="1"
+                            Grid.Row="3"
+                            TextColor="Black"/> 
+
+                    <Label Text="Vive:" 
+                           FontSize="13"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Start"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.Row="1"
+                           Grid.Column="2"
+                           TextColor="Black"/>
+
+                    <Button CornerRadius="50" 
+                            HeightRequest="35" 
+                            WidthRequest="35"
+                            BackgroundColor="#062C53" 
+                            ImageSource="edit.png"
+                            ContentLayout="Right, 20"
+                            Grid.Column="2"
+                            Grid.RowSpan="4"
+                            VerticalOptions="End"
+                            HorizontalOptions="CenterAndExpand"/>
+
+                </Grid>
+            </Frame>
+
+            <Frame HeightRequest="20"
+                   BackgroundColor="Transparent"
+                   BorderColor="Transparent">
+
+            </Frame>
+
+            <Frame Background="White"
+                    BorderColor="#898282"
+                    CornerRadius="5"
+                    Padding="8"
+                    HeightRequest="190"
+                    WidthRequest="360"
+                    IsClippedToBounds="True"
+                    HorizontalOptions="Center"
+                    VerticalOptions="EndAndExpand">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="45"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="110"/>
+                        <ColumnDefinition Width="170"/>
+                        <ColumnDefinition Width="80"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Madre" 
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           HorizontalOptions="CenterAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.ColumnSpan="3"
+                           TextColor="Black"/>
+
+                    <Label Text="Nombre:" 
+                            FontSize="13"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Row="1"
+                            TextColor="Black"/>
+
+                    <Label Text="-"
+                            FontSize="13"
+                            Margin="7"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Column="1"
+                            Grid.Row="1"
+                            TextColor="Black"/>
+
+                    <Label Text="Ocupación:" 
+                            FontSize="13"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Row="2"
+                            TextColor="Black"/>
+
+                    <Label Text="-"
+                            FontSize="13"
+                            Margin="7"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Column="1"
+                            Grid.Row="2"
+                            TextColor="Black"/>
+
+                    <Label Text="Domicilio:" 
+                            FontSize="13"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Row="3"
+                            TextColor="Black"/>
+
+                    <Label Text="-"
+                            FontSize="13"
+                            Margin="7"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Column="1"
+                            Grid.Row="3"
+                            TextColor="Black"/>
+
+                    <Label Text="Vive:" 
+                           FontSize="13"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Start"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.Row="1"
+                           Grid.Column="2"
+                           TextColor="Black"/>
+
+                    <Button CornerRadius="50" 
+                            HeightRequest="35" 
+                            WidthRequest="35"
+                            BackgroundColor="#062C53" 
+                            ImageSource="edit.png"
+                            ContentLayout="Right, 20"
+                            Grid.Column="2"
+                            Grid.RowSpan="4"
+                            VerticalOptions="End"
+                            HorizontalOptions="CenterAndExpand"/>
+
+                </Grid>
+            </Frame>
+
+            <Frame HeightRequest="20"
+                   BackgroundColor="Transparent"
+                   BorderColor="Transparent">
+
+            </Frame>
+
+            <Frame Background="White"
+                    BorderColor="#898282"
+                    CornerRadius="5"
+                    Padding="8"
+                    HeightRequest="190"
+                    WidthRequest="360"
+                    IsClippedToBounds="True"
+                    HorizontalOptions="Center"
+                    VerticalOptions="EndAndExpand">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="45"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="110"/>
+                        <ColumnDefinition Width="170"/>
+                        <ColumnDefinition Width="80"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Conyugue" 
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           HorizontalOptions="CenterAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.ColumnSpan="3"
+                           TextColor="Black"/>
+
+                    <Label Text="Nombre:" 
+                            FontSize="13"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Row="1"
+                            TextColor="Black"/>
+
+                    <Label Text="-"
+                            FontSize="13"
+                            Margin="7"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Column="1"
+                            Grid.Row="1"
+                            TextColor="Black"/>
+
+                    <Label Text="Ocupación:" 
+                            FontSize="13"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Row="2"
+                            TextColor="Black"/>
+
+                    <Label Text="-"
+                            FontSize="13"
+                            Margin="7"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Column="1"
+                            Grid.Row="2"
+                            TextColor="Black"/>
+
+                    <Label Text="Domicilio:" 
+                            FontSize="13"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Row="3"
+                            TextColor="Black"/>
+
+                    <Label Text="-"
+                            FontSize="13"
+                            Margin="7"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Column="1"
+                            Grid.Row="3"
+                            TextColor="Black"/>
+
+                    <Label Text="Vive:" 
+                           FontSize="13"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Start"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.Row="1"
+                           Grid.Column="2"
+                           TextColor="Black"/>
+
+                    <Button CornerRadius="50" 
+                            HeightRequest="35" 
+                            WidthRequest="35"
+                            BackgroundColor="#062C53" 
+                            ImageSource="edit.png"
+                            ContentLayout="Right, 20"
+                            Grid.Column="2"
+                            Grid.RowSpan="4"
+                            VerticalOptions="End"
+                            HorizontalOptions="CenterAndExpand"/>
+
+                </Grid>
+            </Frame>
+
+            <Frame HeightRequest="20"
+                   BackgroundColor="Transparent"
+                   BorderColor="Transparent">
+
+            </Frame>
+
+            <Frame Background="White"
+                    BorderColor="#898282"
+                    CornerRadius="5"
+                    Padding="8"
+                    HeightRequest="190"
+                    WidthRequest="360"
+                    IsClippedToBounds="True"
+                    HorizontalOptions="Center"
+                    VerticalOptions="EndAndExpand">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="45"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="110"/>
+                        <ColumnDefinition Width="170"/>
+                        <ColumnDefinition Width="80"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Hijo(s)" 
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           HorizontalOptions="CenterAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.ColumnSpan="3"
+                           TextColor="Black"/>
+
+                    <Label Text="Nombre:" 
+                            FontSize="13"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Row="1"
+                            TextColor="Black"/>
+
+                    <Label Text="-"
+                            FontSize="13"
+                            Margin="7"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Column="1"
+                            Grid.Row="1"
+                            TextColor="Black"/>
+
+                    <Label Text="Nacimiento:" 
+                            FontSize="13"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Row="2"
+                            TextColor="Black"/>
+
+                    <Label Text="-"
+                            FontSize="13"
+                            Margin="7"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Column="1"
+                            Grid.Row="2"
+                            TextColor="Black"/>
+
+                    <Label Text="Escolaridad:" 
+                            FontSize="13"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Row="3"
+                            TextColor="Black"/>
+
+                    <Label Text="-"
+                            FontSize="13"
+                            Margin="7"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Column="1"
+                            Grid.Row="3"
+                            TextColor="Black"/>
+
+                    <Button CornerRadius="50" 
+                            HeightRequest="35" 
+                            WidthRequest="35"
+                            BackgroundColor="#062C53" 
+                            ImageSource="plus.png"
+                            ContentLayout="Right, 20"
+                            Grid.Column="1"
+                            Grid.RowSpan="4"
+                            VerticalOptions="End"
+                            HorizontalOptions="EndAndExpand"/>
+                    <Button CornerRadius="50" 
+                            HeightRequest="35" 
+                            WidthRequest="35"
+                            BackgroundColor="#062C53" 
+                            ImageSource="edit.png"
+                            ContentLayout="Right, 20"
+                            Grid.Column="2"
+                            Grid.RowSpan="4"
+                            VerticalOptions="End"
+                            HorizontalOptions="CenterAndExpand"/>
+
+                </Grid>
+            </Frame>
+
+            <!-- En caso necesario contactar a -->
+            <Label Text="En caso necesario contactar a"
+                    FontSize="18"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Start"
+                    Margin="20"
+                    Grid.Row="3"
+                    TextColor="Black"/>
+
+            <Frame Background="White"
+                    BorderColor="#898282"
+                    CornerRadius="5"
+                    Padding="8"
+                    HeightRequest="190"
+                    WidthRequest="360"
+                    IsClippedToBounds="True"
+                    HorizontalOptions="Center"
+                    VerticalOptions="EndAndExpand">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="38"/>
+                        <RowDefinition Height="45"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="120"/>
+                        <ColumnDefinition Width="215"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Nombre:" 
+                            FontSize="13"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            TextColor="Black"/>
+
+                    <Label Text="-"
+                            FontSize="13"
+                            Margin="7"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Column="1" 
+                            TextColor="Black"/>
+
+                    <Label Text="Parentesco:" 
+                            FontSize="13"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Row="1"
+                            TextColor="Black"/>
+
+                    <Label Text="-"
+                            FontSize="13"
+                            Margin="7"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Column="1"
+                            Grid.Row="1"
+                            TextColor="Black"/>
+
+                    <Label Text="Domicilio:" 
+                            FontSize="13"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Row="2"
+                            TextColor="Black"/>
+
+                    <Label Text="-"
+                            FontSize="13"
+                            Margin="7"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Column="1"
+                            Grid.Row="2"
+                            TextColor="Black"/>
+
+                    <Label Text="Teléfono:" 
+                            FontSize="13"
+                            FontAttributes="Bold"
+                            HorizontalOptions="EndAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Row="3"
+                            TextColor="Black"/>
+
+                    <Label Text="-"
+                            FontSize="13"
+                            Margin="7"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Column="1"
+                            Grid.Row="3"
+                            TextColor="Black"/>
+
+                    <Button CornerRadius="50" 
+                             HeightRequest="35" 
+                             WidthRequest="35"
+                             BackgroundColor="#062C53" 
+                             ImageSource="edit.png"
+                             ContentLayout="Right, 20"
+                             Grid.Column="1"
+                             Grid.RowSpan="4"
+                             VerticalOptions="End"
+                             HorizontalOptions="EndAndExpand"/>
+
+                </Grid>
+            </Frame>
+
+            <Frame HeightRequest="65"
+                   BackgroundColor="Transparent"
+                   BorderColor="Transparent">
+                <Label Text="Dad software - recursos humanos"
+                       TextColor="Black"
+                       FontSize="12"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand"/>
+
+            </Frame>
+
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

@@ -2,11 +2,565 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ChekaT2.Solicitudes"
-             Title="Solicitudes">
-    <VerticalStackLayout>
-        <Label 
-            Text="Solicitudes"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="Cheka-T"
+             Padding="0,20,0,0"
+             IconImageSource="hambar.png"
+             BackgroundColor="WhiteSmoke">
+    <ScrollView VerticalOptions="FillAndExpand"
+                VerticalScrollBarVisibility="Never">
+        <VerticalStackLayout>
+            <Label Text="Solicitudes"
+                   VerticalOptions="Start" 
+                   TextColor="Black"
+                   FontAttributes="Bold"
+                   FontSize="22"
+                   Margin="10"/>
+
+            <StackLayout >
+                <!-- Constancias -->
+                <Label Text="Constancias"
+                       FontSize="18"
+                       HorizontalOptions="Start"
+                       Margin="20"
+                       Grid.Row="3"
+                       TextColor="Black"/>
+
+                <Frame Background="White"
+                       BorderColor="#898282"
+                       CornerRadius="5"
+                       Padding="8"
+                       HeightRequest="180"
+                       WidthRequest="360"
+                       IsClippedToBounds="True"
+                       HorizontalOptions="Center"
+                       VerticalOptions="EndAndExpand">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="38"/>
+                            <RowDefinition Height="38"/>
+                            <RowDefinition Height="38"/>
+                            <RowDefinition Height="45"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="180"/>
+                            <ColumnDefinition Width="180"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Fecha y hora:" 
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               HorizontalOptions="EndAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               TextColor="Black"/>
+
+                        <Label Text="-"
+                               FontSize="13"
+                               Margin="7"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Column="1" 
+                               TextColor="Black"/>
+
+                        <Label Text="Constancia:" 
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               HorizontalOptions="EndAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Row="1"
+                               TextColor="Black"/>
+
+                        <Label Text="-"
+                               FontSize="13"
+                               Margin="7"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Column="1"
+                               Grid.Row="1"
+                               TextColor="Black"/>
+
+                        <Label Text="Estatus:" 
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               HorizontalOptions="EndAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Row="2"
+                               TextColor="Black"/>
+
+                        <Label Text="-"
+                               FontSize="13"
+                               Margin="7"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Column="1"
+                               Grid.Row="2"
+                               TextColor="Black"/>
+
+                        <Button CornerRadius="50" 
+                                HeightRequest="40" 
+                                WidthRequest="155"
+                                BackgroundColor="#385675" 
+                                Text="Solicitar constancia"
+                                TextColor="White"
+                                FontSize="14"
+                                ContentLayout="Right, 20"
+                                Grid.Row="3"
+                                VerticalOptions="CenterAndExpand"
+                                HorizontalOptions="CenterAndExpand"/>
+
+                        <Button CornerRadius="50" 
+                                HeightRequest="40" 
+                                WidthRequest="155"
+                                BackgroundColor="#EC8746" 
+                                Text="Cancelar solicitud"
+                                TextColor="White"
+                                FontSize="14"
+                                ContentLayout="Right, 20"
+                                Grid.Column="1"
+                                Grid.Row="3"
+                                VerticalOptions="CenterAndExpand"
+                                HorizontalOptions="StartAndExpand"/>
+
+                    </Grid>
+                </Frame>
+
+                <!-- Prestamos -->
+                <Label Text="Prestamos"
+                       FontSize="18"
+                       HorizontalOptions="Start"
+                       Margin="20"
+                       Grid.Row="3"
+                       TextColor="Black"/>
+
+                <Frame Background="White"
+                       BorderColor="#898282"
+                       CornerRadius="5"
+                       Padding="8"
+                       HeightRequest="220"
+                       WidthRequest="360"
+                       IsClippedToBounds="True"
+                       HorizontalOptions="Center"
+                       VerticalOptions="EndAndExpand">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="38"/>
+                            <RowDefinition Height="38"/>
+                            <RowDefinition Height="38"/>
+                            <RowDefinition Height="38"/>
+                            <RowDefinition Height="45"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="180"/>
+                            <ColumnDefinition Width="180"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Fecha y hora:" 
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               HorizontalOptions="EndAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               TextColor="Black"/>
+
+                        <Label Text="-"
+                               FontSize="13"
+                               Margin="7"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Column="1" 
+                               TextColor="Black"/>
+
+                        <Label Text="Monto:" 
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               HorizontalOptions="EndAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Row="1"
+                               TextColor="Black"/>
+
+                        <Label Text="-"
+                               FontSize="13"
+                               Margin="7"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Column="1"
+                               Grid.Row="1"
+                               TextColor="Black"/>
+
+                        <Label Text="N° de pagos:" 
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               HorizontalOptions="EndAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Row="2"
+                               TextColor="Black"/>
+
+                        <Label Text="-"
+                               FontSize="13"
+                               Margin="7"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Column="1"
+                               Grid.Row="2"
+                               TextColor="Black"/>
+
+                        <Label Text="Estatus:" 
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               HorizontalOptions="EndAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Row="3"
+                               TextColor="Black"/>
+
+                        <Label Text="-"
+                               FontSize="13"
+                               Margin="7"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Column="1"
+                               Grid.Row="3"
+                               TextColor="Black"/>
+
+                        <Button CornerRadius="50" 
+                                HeightRequest="40" 
+                                WidthRequest="155"
+                                BackgroundColor="#385675" 
+                                Text="Solicitar prestamo"
+                                TextColor="White"
+                                FontSize="14"
+                                ContentLayout="Right, 20"
+                                Grid.Row="4"
+                                VerticalOptions="CenterAndExpand"
+                                HorizontalOptions="CenterAndExpand"/>
+
+                        <Button CornerRadius="50" 
+                                HeightRequest="40" 
+                                WidthRequest="155"
+                                BackgroundColor="#EC8746" 
+                                Text="Cancelar solicitud"
+                                TextColor="White"
+                                FontSize="14"
+                                ContentLayout="Right, 20"
+                                Grid.Column="1"
+                                Grid.Row="4"
+                                VerticalOptions="CenterAndExpand"
+                                HorizontalOptions="StartAndExpand"/>
+
+                    </Grid>
+                </Frame>
+
+                <!-- Vacaciones -->
+                <Label Text="Vacaciones"
+                       FontSize="18"
+                       HorizontalOptions="Start"
+                       Margin="20"
+                       Grid.Row="3"
+                       TextColor="Black"/>
+
+                <Frame Background="White"
+                       BorderColor="#898282"
+                       CornerRadius="5"
+                       Padding="8"
+                       HeightRequest="220"
+                       WidthRequest="360"
+                       IsClippedToBounds="True"
+                       HorizontalOptions="Center"
+                       VerticalOptions="EndAndExpand">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="130"/>
+                            <ColumnDefinition Width="50"/>
+                            <ColumnDefinition Width="120"/>
+                            <ColumnDefinition Width="60"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Datos informativos" 
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               HorizontalOptions="CenterAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.ColumnSpan="4"
+                               TextColor="Black"/>
+
+                        <Label Text="Fecha de ingreso:" 
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               HorizontalOptions="EndAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Row="1"
+                               TextColor="Black"/>
+
+                        <Label Text="-"
+                               FontSize="13"
+                               Margin="7"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Column="1"
+                               Grid.Row="1"
+                               TextColor="Black"/>
+
+                        <Label Text="Años de antiguedad:" 
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               HorizontalOptions="EndAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Row="2"
+                               TextColor="Black"/>
+
+                        <Label Text="-"
+                               FontSize="13"
+                               Margin="7"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Column="1"
+                               Grid.Row="2"
+                               TextColor="Black"/>
+
+                        <Label Text="Días pendientes:" 
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               HorizontalOptions="EndAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Row="3"
+                               TextColor="Black"/>
+
+                        <Label Text="-"
+                               FontSize="13"
+                               Margin="7"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Column="1"
+                               Grid.Row="3"
+                               TextColor="Black"/>
+
+                        <Label Text="Última fecha gozada:" 
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               HorizontalOptions="EndAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Row="4"
+                               TextColor="Black"/>
+
+                        <Label Text="-"
+                               FontSize="13"
+                               Margin="7"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Column="1"
+                               Grid.Row="4"
+                               TextColor="Black"/>
+
+                        <Label Text="Periodo de nómina:" 
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               HorizontalOptions="EndAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Column="2"
+                               Grid.Row="1"
+                               TextColor="Black"/>
+
+                        <Label Text="-"
+                               FontSize="13"
+                               Margin="7"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Column="3"
+                               Grid.Row="1"
+                               TextColor="Black"/>
+
+                        <Label Text="Días de vacaciones:" 
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               HorizontalOptions="EndAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Column="2"
+                               Grid.Row="2"
+                               TextColor="Black"/>
+
+                        <Label Text="-"
+                               FontSize="13"
+                               Margin="7"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Column="3"
+                               Grid.Row="2"
+                               TextColor="Black"/>
+
+                        <Label Text="Días disponibles:" 
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               HorizontalOptions="EndAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Column="2"
+                               Grid.Row="3"
+                               TextColor="Black"/>
+
+                        <Label Text="-"
+                               FontSize="13"
+                               Margin="7"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Column="3"
+                               Grid.Row="3"
+                               TextColor="Black"/>
+
+                    </Grid>
+                </Frame>
+
+                <Frame HeightRequest="20"
+                       BackgroundColor="Transparent"
+                       BorderColor="Transparent">
+
+                </Frame>
+
+                <Frame Background="White"
+                       BorderColor="#898282"
+                       CornerRadius="5"
+                       Padding="8"
+                       HeightRequest="260"
+                       WidthRequest="360"
+                       IsClippedToBounds="True"
+                       HorizontalOptions="Center"
+                       VerticalOptions="EndAndExpand">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="38"/>
+                            <RowDefinition Height="38"/>
+                            <RowDefinition Height="38"/>
+                            <RowDefinition Height="38"/>
+                            <RowDefinition Height="38"/>
+                            <RowDefinition Height="45"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="180"/>
+                            <ColumnDefinition Width="180"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Inicio:" 
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               HorizontalOptions="EndAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               TextColor="Black"/>
+
+                        <Label Text="-"
+                               FontSize="13"
+                               Margin="7"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Column="1" 
+                               TextColor="Black"/>
+
+                        <Label Text="Fin:" 
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               HorizontalOptions="EndAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Row="1"
+                               TextColor="Black"/>
+
+                        <Label Text="-"
+                               FontSize="13"
+                               Margin="7"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Column="1"
+                               Grid.Row="1"
+                               TextColor="Black"/>
+
+                        <Label Text="Días:" 
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               HorizontalOptions="EndAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Row="2"
+                               TextColor="Black"/>
+
+                        <Label Text="-"
+                               FontSize="13"
+                               Margin="7"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Column="1"
+                               Grid.Row="2"
+                               TextColor="Black"/>
+
+                        <Label Text="Estatus:" 
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               HorizontalOptions="EndAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Row="3"
+                               TextColor="Black"/>
+
+                        <Label Text="-"
+                               FontSize="13"
+                               Margin="7"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Column="1"
+                               Grid.Row="3"
+                               TextColor="Black"/>
+
+                        <Label Text="Motivo rechazo:" 
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               HorizontalOptions="EndAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Row="4"
+                               TextColor="Black"/>
+
+                        <Label Text="-"
+                               FontSize="13"
+                               Margin="7"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="CenterAndExpand"
+                               Grid.Column="1"
+                               Grid.Row="4"
+                               TextColor="Black"/>
+
+                        <Button CornerRadius="50" 
+                                HeightRequest="40" 
+                                WidthRequest="155"
+                                BackgroundColor="#385675" 
+                                Text="Solicitar vacaciones"
+                                TextColor="White"
+                                FontSize="14"
+                                ContentLayout="Right, 20"
+                                Grid.Row="5"
+                                VerticalOptions="CenterAndExpand"
+                                HorizontalOptions="CenterAndExpand"/>
+
+                        <Button CornerRadius="50" 
+                                HeightRequest="40" 
+                                WidthRequest="155"
+                                BackgroundColor="#EC8746" 
+                                Text="Cancelar solicitud"
+                                TextColor="White"
+                                FontSize="14"
+                                ContentLayout="Right, 20"
+                                Grid.Column="1"
+                                Grid.Row="5"
+                                VerticalOptions="CenterAndExpand"
+                                HorizontalOptions="StartAndExpand"/>
+
+                    </Grid>
+                </Frame>
+
+                <Frame HeightRequest="65"
+                       BackgroundColor="Transparent"
+                       BorderColor="Transparent">
+                    <Label Text="Dad software - recursos humanos"
+                           TextColor="Black"
+                           FontSize="12"
+                           HorizontalOptions="CenterAndExpand"
+                           VerticalOptions="CenterAndExpand"/>
+
+                </Frame>
+
+            </StackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
